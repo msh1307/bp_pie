@@ -6,5 +6,5 @@ print("binbase : "+hex(binbase))
 bp_off = [0x000D8E]
 for i in bp_off:
     gdb.execute("b * "+hex(binbase + i))
-gdb.exeecute("c")
+gdb.execute("c")
 # gdb -q -x ./gdbscript.py at pid
